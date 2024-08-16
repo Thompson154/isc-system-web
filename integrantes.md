@@ -1,4 +1,4 @@
 - Paul Landaeta
 - Alexia Marin
 - Miguel Quenta
-- Adrian Thompson
+- Adrian Sanchez
