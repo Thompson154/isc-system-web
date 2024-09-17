@@ -11,13 +11,13 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'yarn install'
-                sh 'yarn add cypress --dev'
+                sh 'npm install'
+                sh 'npm install cypress --save-dev'
             }
         }
         stage('Build') {
             steps {
-                sh 'yarn build'
+                sh 'npm run build'
             }
         }
         stage('Check package.json') {
@@ -28,7 +28,7 @@ pipeline {
 
         stage('Run Cypress Tests') {
             steps {
-                sh 'yarn cypress run'
+                sh 'npm run cypress:run'
             }
         }
     }
