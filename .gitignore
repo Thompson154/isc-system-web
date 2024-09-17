@@ -24,7 +24,6 @@ dist-ssr
 *.sw?
 .env
 yarn.lock
-package.json
 
 # Contentlayer
 .contentlayer
