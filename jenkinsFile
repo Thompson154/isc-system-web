@@ -20,9 +20,15 @@ pipeline {
                 sh 'npm run build'
             }
         }
+        stage('Check package.json') {
+            steps {
+                sh 'cat package.json'
+        }
+        }
+
         stage('Run Cypress Tests') {
             steps {
-                sh 'npm run cypress:run'
+                sh 'npx cypress run'
             }
         }
     }
